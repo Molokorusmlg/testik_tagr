@@ -1,0 +1,24 @@
+@import '../../global.scss';
+
+.main {
+    background-color: $backgroundColor;
+    height: 100vh;
+    position:relative;
+    padding-bottom:50px;
+    text-align: center;
+    &__content {
+        @include flex(column, center, center);
+    }
+    &__firstRow {
+        @include flex(row, space-between, center);
+    }
+    &__secondRow {
+        @include flex(row, center, center);
+    }
+    &__card {
+        background-color: $backgroundColorCARD;
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+    }
+}
